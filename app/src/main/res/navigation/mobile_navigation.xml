@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.proyectonavigation.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_nav_slideshow"
+            app:destination="@id/nav_slideshow"
+            app:popUpTo="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_home_to_fragment_apk"
+            app:destination="@id/fragment_apk"
+            app:popUpTo="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_home_to_fragment_maravillas"
+            app:destination="@id/fragment_maravillas"
+            app:popUpTo="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_home_to_fragment_otro"
+            app:destination="@id/fragment_otro"
+            app:popUpTo="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_home_to_fragment_calculadora"
+            app:destination="@id/fragment_calculadora"
+            app:popUpTo="@id/nav_home" />
+        <action
+            android:id="@+id/action_nav_home_to_fragment_sonido3"
+            app:destination="@id/fragment_sonido" />
+        <action
+            android:id="@+id/action_nav_home_to_fragment_sitioweb2"
+            app:destination="@id/fragment_sitioweb" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.proyectonavigation.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/fragment_apk"
+        android:name="com.example.proyectonavigation.fragment_apk"
+        android:label="fragment_apk"
+        tools:layout="@layout/fragment_apk" />
+    <fragment
+        android:id="@+id/fragment_maravillas"
+        android:name="com.example.proyectonavigation.fragment_maravillas"
+        android:label="fragment_maravillas"
+        tools:layout="@layout/fragment_maravillas" />
+    <fragment
+        android:id="@+id/fragment_otro"
+        android:name="com.example.proyectonavigation.fragment_otro"
+        android:label="fragment_otro"
+        tools:layout="@layout/fragment_otro" />
+    <fragment
+        android:id="@+id/fragment_calculadora"
+        android:name="com.example.proyectonavigation.fragment_calculadora"
+        android:label="fragment_calculadora"
+        tools:layout="@layout/fragment_calculadora" />
+    <fragment
+        android:id="@+id/fragment_sonido"
+        android:name="com.example.proyectonavigation.fragment_sonido"
+        android:label="fragment_sonido"
+        tools:layout="@layout/fragment_sonido" />
+    <fragment
+        android:id="@+id/fragment_sitioweb"
+        android:name="com.example.proyectonavigation.fragment_sitioweb"
+        android:label="fragment_sitioweb"
+        tools:layout="@layout/fragment_sitioweb" />
+</navigation>

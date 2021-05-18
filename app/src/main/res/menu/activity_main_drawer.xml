@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/fragment_calculadora"
+            android:icon="@drawable/ic_baseline_calculate_24"
+            android:title="Calculadora" />
+        <item
+            android:id="@+id/fragment_sonido"
+            android:icon="@drawable/ic_baseline_music_video_24"
+            android:title="Sonido" />
+
+        <item
+            android:id="@+id/fragment_sitioweb"
+            android:icon="@drawable/ic_baseline_language_24"
+            android:title="Sitio Web" />
+
+        <item android:title="Otras Apk"
+            android:id="@+id/fragment_apk"
+            android:icon="@drawable/ic_baseline_touch_app_24"
+            />
+
+        <item android:title="Maravillas "
+            android:id="@+id/fragment_maravillas"
+            android:icon="@drawable/ic_baseline_time_to_leave_24"/>
+
+        <item android:title="Otros"
+            android:id="@+id/fragment_otro"
+            android:icon="@drawable/ic_menu_slideshow"/>
+    </group>
+</menu>
